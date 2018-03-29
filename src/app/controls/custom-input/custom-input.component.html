@@ -1,0 +1,9 @@
+<div>
+  <label><ng-content></ng-content>
+    <input type="number" [(ngModel)]="day" (change)="dayChanged($event)" size="2" placeholder="DD"/>
+    <span>&frasl;</span>
+    <input type="number" [(ngModel)]="month" (change)="monthChanged($event)"  size="2" placeholder="MM" />
+    <span>&frasl;</span>
+    <input type="number" [(ngModel)]="year" (change)="yearChanged($event)" size="4" placeholder="YYYY"/>
+  </label>
+</div>
